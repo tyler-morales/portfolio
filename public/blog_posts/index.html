@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,600,900&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="http://tmo.codes/scss/main.min.98d910f6b04a3b783eb54de5b765b14317eb180e49599e85f641fce1a98eb606.css">
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <title>Tyler Morales</title>
+
+</head>
+
+<body>
+
+
+<nav>
+    <span class=home><a href="/">Tmo</a></span>
+
+    <button class="hamburger hamburger--collapse" type="button" aria-controls=menu aria-expanded=false>
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <ul id=menu>
+        
+        <li><a href="http://tmo.codes/project_posts/">Projects</a></li>
+        
+        <li><a href="http://tmo.codes/about/">About</a></li>
+        
+        <li><a href="http://tmo.codes/blog_posts/">Blog</a></li>
+        
+        
+    </ul>
+
+</nav>
+
+
+
+
+
+    
+<main class="blog__container">
+    <div>
+        <h1 class="blog__container--title">Blog</h1>
+        <h4 class="blog__container--description">Tutorials, tips and tricks for developers</h4>
+        
+        <div class="box">
+    <div class="box--num">3</div>
+    <div class="box--description"># of posts</div>
+</div>
+
+        <div class="posts">
+            
+            <div class="posts__post">
+                <div class="posts__post__text">
+                    <h2 class="posts__post__text--title">Coding music</h2>
+                    <p class="posts__post__text--description">The best vibes for late night coding sessions while listening to lo-fi 🎧</p>
+                    <h5 class="posts__post__text--date">Mon Feb 10 2020</h5>
+                </div>
+                <a class="posts__post--link" href="http://tmo.codes/blog_posts/post3/">Read more</a>
+            </div>
+            
+            <div class="posts__post">
+                <div class="posts__post__text">
+                    <h2 class="posts__post__text--title">The Beginnings</h2>
+                    <p class="posts__post__text--description">My journey into Web Development</p>
+                    <h5 class="posts__post__text--date">Fri Feb 7 2020</h5>
+                </div>
+                <a class="posts__post--link" href="http://tmo.codes/blog_posts/post1/">Read more</a>
+            </div>
+            
+            <div class="posts__post">
+                <div class="posts__post__text">
+                    <h2 class="posts__post__text--title">Desk setup</h2>
+                    <p class="posts__post__text--description">Check out how I set up my desk for coding</p>
+                    <h5 class="posts__post__text--date">Wed Jan 22 2020</h5>
+                </div>
+                <a class="posts__post--link" href="http://tmo.codes/blog_posts/post2/">Read more</a>
+            </div>
+            
+        </div>
+    </div>
+</main>
+
+
+
+    <footer>Made with ♡ by Tyler Morales</footer>
+
+    
+    <script>
+        const navButtons = [...document.querySelectorAll("button[aria-expanded]")];
+
+        function toggleNav() {
+            const expanded = this.getAttribute("aria-expanded") == "true" || false;
+            this.setAttribute("aria-expanded", !expanded);
+        }
+        navButtons.map(button => {
+            button.addEventListener("click", toggleNav);
+        });
+
+        
+        
+        var hamburger = document.querySelector(".hamburger");
+        
+        hamburger.addEventListener("click", function () {
+            
+            hamburger.classList.toggle("is-active");
+            
+        });
+    </script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
+    <script>
+        const instance = new Mark(document.querySelector("section.context"));
+        instance.mark(["interactive", "real-time", "modern design"], {
+            "element": "mark",
+            "className": "highlight"
+        });
+
+        const instance2 = new Mark(document.querySelector("section.about"));
+        instance2.mark(["purposeful design", "intuitive web experiences", "building interactive", "Chicago meetups",
+            "document our progress", "learn the latest technologies", "globally", "Web Development and Design",
+            "Columbia College Chicago"
+        ], {
+            "element": "mark",
+            "className": "highlight",
+            "acrossElements": true,
+            "separateWordSearch": false,
+            "accuracy": {
+                "value": "exactly",
+                "limiters": [",", "."]
+            },
+        });
+    </script>
+
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200, 
+        });
+    </script>
+
+    </body>
+
+    </html>

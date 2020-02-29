@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Tyler Morales</title>
+    <link>http://tmo.codes/series/</link>
+    <description>Recent content in Series on Tyler Morales</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://tmo.codes/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
