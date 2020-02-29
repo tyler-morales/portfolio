@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+{{ partial "head" . }}
+
+{{if not .IsHome}}
+{{ partial "nav" . }}
+{{end}}
+
+{{ block "main" . }}
+<!-- all main content goes here -->
+{{ end }}
+
+{{ partial "footer" }}

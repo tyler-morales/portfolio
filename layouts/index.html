@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="home__container">
+
+    <h1 class="home__container--intro">{{ .Description }}</h1>
+
+    <div class="home__container--socials">{{ partial "socials" . }}</div>
+
+    <div class="home__container__cards fade-in-slow">
+        {{ range .Pages }}
+        <a href="{{ .Permalink }}" class="home__card">
+            <h2 class="home__card--title">{{ .Title }}</h2>
+            <hr class="home__card--line">
+            <p class="home__card--description">{{ .Description }}</p>
+        </a>
+        {{ end }}
+    </div>
+
+</div>
+{{ end }}

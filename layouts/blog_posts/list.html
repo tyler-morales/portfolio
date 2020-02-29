@@ -1,0 +1,25 @@
+{{ define "main" }}
+    
+<main class="blog__container">
+    <div>
+        <h1 class="blog__container--title">{{ .Title }}</h1>
+        <h4 class="blog__container--description">{{.Description}}</h4>
+        
+        {{ partial "page_counter" .}}
+
+        <div class="posts">
+            {{ range .Pages }}
+            <div class="posts__post">
+                <div class="posts__post__text">
+                    <h2 class="posts__post__text--title">{{.Title}}</h2>
+                    <p class="posts__post__text--description">{{ .Description }}</p>
+                    <h5 class="posts__post__text--date">{{ .PublishDate.Format "Mon Jan 2 2006" }}</h5>
+                </div>
+                <a class="posts__post--link" href="{{ .Permalink }}">Read more</a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</main>
+
+{{ end }}

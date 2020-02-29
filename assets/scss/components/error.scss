@@ -1,0 +1,16 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+
+    &__text {
+        margin-bottom: 40px;
+    }
+
+    &--img {
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<main class="projects__container">
+    <div>
+        <h1 class="projects__container--title">{{ .Title }}</h1>
+
+        <div class="projects fade-in">
+            {{ range .Pages }}
+            <div class="projects__post">
+                <img class="projects__post--thumbnail" src="{{ .Params.thumbnail }}" alt="ISS Homepage">
+                <div class="projects__post__text">
+                    <h2 class="projects__post__text--title">{{.Title}}</h2>
+                    <p class="projects__post__text--description">{{ .Description }}</p>
+                </div>
+                <a class="projects__post--link" href="{{ .Permalink }}">View Project</a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    {{ partial "page_counter" .}}
+</main>
+
+{{ end }}

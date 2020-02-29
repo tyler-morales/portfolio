@@ -1,3 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "http://tmo.codes/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Tyler Morales"
+
+[taxonomies]
+  series = "series"

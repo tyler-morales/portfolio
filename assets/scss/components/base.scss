@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #ffffff;
+    --color-secondary: #f1f1f1;
+    --color-tertiary: #667482;
+
+    --color-text-main: #000000;
+}
+
+body {
+    background-color: var(--color-primary);
+    margin: 3rem auto;
+    font-family: 'IBM Plex Mono', monospace;
+    max-width: 1080px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+    color: var(--color-text-main);
+    text-decoration: none;
+}
+
+hr {
+    color: var(--color-tertiary);
+    opacity: .4;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

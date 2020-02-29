@@ -1,0 +1,29 @@
+.home__card {
+
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: var(--color-secondary);
+    padding: 1rem;
+    min-height: 10rem;
+    border: 2px dotted var(--color-primary);
+    transition: all .2s ease-in-out;
+
+    &--title {
+        color: var(--color-text-main);
+        margin-bottom: 1rem;
+    }
+
+    &--line {
+        margin-bottom: 1rem;
+    }
+
+    &--description {
+        color: var(--color-tertiary);
+        line-height: 28px;
+    }
+
+    &:hover {
+        border: 2px dotted var(--color-tertiary);
+        transform: translateY(-.5rem);
+    }
+
+}

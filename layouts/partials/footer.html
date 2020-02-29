@@ -1,0 +1,61 @@
+    <footer>Made with ♡ by Tyler Morales</footer>
+
+    <!-- Hamburger Menu -->
+    <script>
+        const navButtons = [...document.querySelectorAll("button[aria-expanded]")];
+
+        function toggleNav() {
+            const expanded = this.getAttribute("aria-expanded") == "true" || false;
+            this.setAttribute("aria-expanded", !expanded);
+        }
+        navButtons.map(button => {
+            button.addEventListener("click", toggleNav);
+        });
+
+        //menu button
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", function () {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Do something else, like open/close menu
+        });
+    </script>
+
+    <!-- Mark.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
+    <script>
+        const instance = new Mark(document.querySelector("section.context"));
+        instance.mark(["interactive", "real-time", "modern design"], {
+            "element": "mark",
+            "className": "highlight"
+        });
+
+        const instance2 = new Mark(document.querySelector("section.about"));
+        instance2.mark(["purposeful design", "intuitive web experiences", "building interactive", "Chicago meetups",
+            "document our progress", "learn the latest technologies", "globally", "Web Development and Design",
+            "Columbia College Chicago"
+        ], {
+            "element": "mark",
+            "className": "highlight",
+            "acrossElements": true,
+            "separateWordSearch": false,
+            "accuracy": {
+                "value": "exactly",
+                "limiters": [",", "."]
+            },
+        });
+    </script>
+
+    <!-- aos.js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200, // values from 0 to 3000, with step 50ms
+        });
+    </script>
+
+    </body>
+
+    </html>
