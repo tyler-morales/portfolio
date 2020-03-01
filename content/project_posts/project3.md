@@ -4,7 +4,7 @@ title: "George Perez Judge"
 description: "A choose your own adventure JS game"
 typeOf: "Game"
 draft: false
-thumbnail: "/images/textAdventure_thumbnail.png"
+thumbnail: "/images/project_02/textAdventure_thumbnail.png"
 mockup: "/images/textAdventure_desktop.png"
 liveLink: "https://peaceful-knuth-debc9a.netlify.com/"
 brief:

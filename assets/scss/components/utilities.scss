@@ -27,5 +27,17 @@
 }
 
 .highlight {
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(218, 255, 97) 0%, rgb(253, 248, 196) 50% );
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(218, 255, 97) 0%, rgb(253, 248, 196) 50%);
+}
+
+.rocket {
+    transition: all .6s;
+    position: absolute;
+    margin-left: 10px;
+
+    &:hover {
+        transform: translateY(-10px);
+        // transform: translateX(10px);
+        // opacity: 0;
+    }
 }

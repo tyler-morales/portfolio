@@ -1,11 +1,12 @@
-{{ partial "head" . }}
 
+{{ define "main" }}
+    
 <div class="home__container">
-
+    
     <h1 class="home__container--intro">{{ .Description }}</h1>
-
+    
     <div class="home__container--socials">{{ partial "socials" . }}</div>
-
+    
     <div class="home__container__cards">
         {{ range .Pages }}
         <a href="{{ .Permalink }}" class="home__card layered-fade ">
@@ -17,7 +18,4 @@
     </div>
 
 </div>
-
-
-
-{{ partial "footer" }}
+{{ end }}
