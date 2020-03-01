@@ -3,10 +3,10 @@
 
     <div class="prevNext__controls">
         {{ if .NextInSection }}
-        <a href="{{.NextInSection.Permalink}}">⏪ Previous Project </a>
+        <a href="{{.NextInSection.Permalink}}" class="prevNext__controls--btn">⬅ Prev</a>
         {{ end }}
         {{ if .PrevInSection }}
-        <a href="{{.PrevInSection.Permalink}}">Next Project ⏩</a>
+        <a href="{{.PrevInSection.Permalink}}" class="prevNext__controls--btn">Next ➡</a>
         {{ end }}
     </div>
 </div>
