@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,600,900&display=swap" rel="stylesheet">
-    
+    <!-- AOS library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- sass -->
     {{ $scss := resources.Get "scss/main.scss" }}
     {{ $style := $scss | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     
-    <title>{{ .Site.Title }}</title>
+    <title>{{ .Page.Title }}</title>
 
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>

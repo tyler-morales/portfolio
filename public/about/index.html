@@ -7,16 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,600,900&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    
     
     
     <link rel="stylesheet" href="/scss/main.min.98d910f6b04a3b783eb54de5b765b14317eb180e49599e85f641fce1a98eb606.css">
     
-    <title>Hugo Sandbox</title>
+    <title>About</title>
 
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
+
+
 <nav>
     <span class=home><a href="/">Tmo</a></span>
 
@@ -41,11 +45,12 @@
 
 
 
-    
+
+
 
 <section class="about">
-    <img src="https://avatars3.githubusercontent.com/u/44333523?s=460&v=4" alt="Profile Image" class="profile">
-    <div class="about__text">
+    <img src="https://avatars3.githubusercontent.com/u/44333523?s=460&v=4" alt="Profile Image" class="profile" data-aos="fade-right">
+    <div class="about__text" data-aos="fade-left">
         <h2>Tyler Morales</h2>
         <p>Ever since a young age, I’ve been interested in technology and design. From growing up with the internet, building countless projects and constantly having an urge to create anything, purposeful design has been important to me. Ultimately, this fascination with creativity and design has led me to find web development the perfect landscape to extend my passion towards building interactive and intuitive web experiences.</p>
         <p>Along with development, I am very active in the developer community online and in local Chicago meetups. I, amongst others, build up and motivate other like minded individuals, document our progress and learn the latest technologies with developers globally! Currently, I am studying Web Development and Design at Columbia College Chicago.</p>
@@ -58,50 +63,15 @@
     <footer>Made with ♡ by Tyler Morales</footer>
 
     
-    <script>
-        const navButtons = [...document.querySelectorAll("button[aria-expanded]")];
-
-        function toggleNav() {
-            const expanded = this.getAttribute("aria-expanded") == "true" || false;
-            this.setAttribute("aria-expanded", !expanded);
-        }
-        navButtons.map(button => {
-            button.addEventListener("click", toggleNav);
-        });
-
-        
-        
-        var hamburger = document.querySelector(".hamburger");
-        
-        hamburger.addEventListener("click", function () {
-            
-            hamburger.classList.toggle("is-active");
-            
-        });
-    </script>
+    <script src="/js/vendors/hamburger.js"></script>
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
-    <script>
-        const instance = new Mark(document.querySelector("section.context"));
-        instance.mark(["interactive", "real-time", "modern design"], {
-            "element": "mark",
-            "className": "highlight"
-        });
+    <script src="/js/vendors/mark.js"></script>
 
-        const instance2 = new Mark(document.querySelector("section.about"));
-        instance2.mark(["purposeful design", "intuitive web experiences", "building interactive", "Chicago meetups", "document our progress", "learn the latest technologies", "globally","Web Development and Design", "Columbia College Chicago"], {
-            "element": "mark",
-            "className": "highlight",
-            "acrossElements": true,
-            "separateWordSearch": false,
-            "accuracy": {
-                "value": "exactly",
-                "limiters": [",", "."]
-            },
-        });
-    </script>
-
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="/js/vendors/aos.js"></script>
 
     </body>
 

@@ -3,27 +3,27 @@
 <main class="project">
 
     {{/*  HERO  */}}
-    <section class="hero">
-        <div class="hero__text">
+    <section class="hero fade-in">
+        <div class="hero__text" data-aos="fade-right">
             <h4 class="hero__text--type">{{ .Params.typeOf}}</h4>
             <h1 class="hero__text--title">{{ .Title }}</h1>
             <h3 class="hero__text--description">{{.Description}}</h3>
         </div>
-        <div>
+        <div data-aos="fade-left">
             <img class="hero--img" src="{{ .Params.mockup }}" alt="ISS Homepage">
-            <h4 class="hero--link"><a href={{ .Params.liveLink }} target="blank">View Live Site</a></h4>
+            <h4 class="hero--link"><a href={{ .Params.liveLink }} target="blank">View Live Site 🚀</a></h4>
         </div>
     </section>
 
     {{/*  BRIEF CONTAINER  */}}
-    <section class="brief-container">
+    <section class="brief-container" data-aos="fade-up">
         <div class="text-block">
             <h2 class="text-block--title">{{ .Params.brief.overview}}</h2>
             <p class="text-block--para">{{ .Params.brief.background }}</p>
         </div>
 
         {{/*  info snippets  */}}
-        <div class="brief-container__bites">
+        <div class="brief-container__bites" data-aos="fade-up">
             <div class="brief-container__bites__section">
                 <h3 class="brief-container__bites--title">Technologies</h3>
                 <ul class="brief-container__bites__bullets">
@@ -54,18 +54,18 @@
     </section>
 
     {{/*  THE SITUATION  */}}
-    <section class="situation context">
+    <section class="situation context" data-aos="fade-up">
         <h4 class="sm-head">The Situation</h4>
         <h1 class="block-text">{{ .Params.situation }}</h1>
     </section>
 
-    <div class="text-block">
+    <div class="text-block" data-aos="fade-up">
         <h2 class="text-block--title">{{ .Params.solution.title}}</h2>
         <p class="text-block--para">{{ .Params.solution.body }}</p>
     </div>
 
     {{/*  SCOPE  */}}
-    <section class="scope">
+    <section class="scope" data-aos="fade-up">
         <h2 class="scope--title">Scope</h2>
 
         <div class="scope__sections">
@@ -109,7 +109,7 @@
     </section>
 
     {{/*  THE PROCESS  */}}
-    <section class="process">
+    <section class="process" data-aos="fade-up">
 
         {{/*  Intro  */}}
         <section class="process__00">
@@ -143,7 +143,7 @@
         </section>
 
         {{/*  01  */}}
-        <section class="process__01">
+        <section class="process__01" data-aos="fade-up">
 
             <div>
                 <h4 class="sm-head">01. Client Requirements & Goals</h4>
@@ -174,7 +174,7 @@
         </section>
 
         {{/*  02  */}}
-        <section class="process__02">
+        <section class="process__02" data-aos="fade-up">
             <h4 class="sm-head">02. Inspiration</h4>
             <h1 class="block-text">Looking Abroad</h1>
             <p>{{ .Params.process.step2 }}</p>
@@ -182,12 +182,12 @@
             <div class="process__02__moodboard">
                 <h2 class="process__02__moodboard--title">Moodboard</h2>
                 <img src="https://miro.medium.com/max/3492/1*6843dZOcv-1Ick9i9Kt_pg.png" alt="NASA Moodboard">
-                <ul class="process__02__moodboard__descriptors list">
-                    {{ range .Params.moodboard}}
-                    <li class="list--item">{{ . }}</li>
-                    <span>|</span>
-                    {{ end }}
-                </ul>
+                    <ul class="process__02__moodboard__descriptors list">
+                        {{ range .Params.moodboard}}
+                        <li class="list--item">{{ . }}</li>
+                        <span>|</span>
+                        {{ end }}
+                    </ul>
             </div>
 
             <div class="process__02__competition">
@@ -195,13 +195,15 @@
 
                 <div class="process__02__competition__cards">
                     <div class="process__02__competition__cards__card">
-                        <img src="/images/comp_01.png" alt="" class="process__02__competition__cards__card--img">
+                        <img src="/images/project_01/comp_01.png" alt=""
+                            class="process__02__competition__cards__card--img">
                         <h3 class="process__02__competition__cards__card--title">isstracker.com</h3>
                         <p>{{ .Params.competition.one }}</p>
                         <h5 class="footnote"><a href="#">isstracker.com</a></h5>
                     </div>
                     <div class="process__02__competition__cards__card">
-                        <img src="/images/comp_02.png" alt="" class="process__02__competition__cards__card--img">
+                        <img src="/images/project_01/comp_02.png" alt=""
+                            class="process__02__competition__cards__card--img">
                         <h3 class="process__02__competition__cards__card--title">Satflare</h3>
                         <p>{{ .Params.competition.two }}</p>
                         <h5 class="footnote"><a href="#">satflare.com</a></h5>
@@ -213,7 +215,7 @@
         </section>
 
         {{/*  03  */}}
-        <section class="process__03">
+        <section class="process__03" data-aos="fade-up">
             <h4 class="sm-head">03. Strategy: User Experience (UX)</h4>
             <h1 class="block-text">Thinking First</h1>
             <p>{{ .Params.process.step3 }}</p>
@@ -235,7 +237,7 @@
         </section>
 
         {{/*  04  */}}
-        <section class="process__04">
+        <section class="process__04" data-aos="fade-up">
             <h4 class="sm-head">04. Design (UI)</h4>
             <h1 class="block-text">Designing Beyond Visuals</h1>
             <p>{{ .Params.process.step4 }}</p>
@@ -317,16 +319,16 @@
                             importance of the mapping feature. </p>
                     </div>
                     <div class="process__04__system__section__img">
-                        <img class="process__04__system__section__img--img" src="/images/iss_graphic.png"
+                        <img class="process__04__system__section__img--img" src="{{ .Params.designSystem.graphic}}"
                             alt="graphic image">
-                        <h5 class="footnote">A snippet from Leaflet</h5>
+                        <h5 class="footnote">A card showcasing data from the ISS API</h5>
                     </div>
                 </div>
             </div>
         </section>
 
         {{/*  05  */}}
-        <section class="process__05">
+        <section class="process__05" data-aos="fade-up">
             <h4 class="sm-head">05. Development (software)</h4>
             <h1 class="block-text">Putting it all Together</h1>
             <p>{{ .Params.process.step5 }}</p>
@@ -334,19 +336,19 @@
             <div class="process__05__technologies">
                 <h2 class="process__05__technologies--title">Technologies/ Services</h2>
                 <ul class="list process__05__technologies__block">
-                    <li class="list--item">Javascript</li>
-                    <li class="list--item">HTML</li>
-                    <li class="list--item">CSS/SASS</li>
-                    <li class="list--item">Netlify</li>
-                    <li class="list--item">npm</li>
+                    <li class="list--item"><img src="/icons/js-icon.png" alt="">JS</li>
+                    <li class="list--item"><img src="/icons/html-icon.png" alt="">HTML</li>
+                    <li class="list--item"><img src="/icons/sass-icon.png" alt="">CSS</li>
+                    <li class="list--item"><img src="/icons/css-icon.png" alt="">SASS</li>
                     <li class="list--item">Git/ Github</li>
+                    <li class="list--item">Netlify</li>
                 </ul>
             </div>
 
             <div class="process__05__features">
                 <h2 class="process__05__technologies--title">Features & Methodologies</h2>
                 <ul class="list process__05__features__list">
-                    {{ range .Params.grids }}
+                    {{ range .Params.features }}
                     <li class="list--item">
                         <h3>{{ .title }}</h3>
                         {{ range .description }}
@@ -359,17 +361,16 @@
         </section>
 
         {{/*  THE RESULTS  */}}
-        <section class="results">
+        <section class="results" data-aos="fade-up">
             <h4 class="sm-head">The Results</h4>
             <h1 class="block-text">Letting the Results Speak for Themselves</h1>
 
             <div class="results__images">
-                <img src="/images/iss_composite.png" alt="">
-                {{/*  <img src="/images/iss_iPhone.png" alt="">
-                <img src="/images/iss_iPad.png" alt="">
-                <img src="/images/iss_laptop.png" alt="">  */}}
+                <img src="{{ .Params.results.image}}" alt="">
             </div>
         </section>
+
+        {{ partial "nextPrevNav" . }}
 
 </main>
 
