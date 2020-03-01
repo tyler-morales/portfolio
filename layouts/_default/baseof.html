@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html>
-
 {{ partial "head" . }}
+{{ partial "nav" .}}
 
-{{if not .IsHome}}
-{{ partial "nav" . }}
-{{end}}
+    {{ block "main" . }}
+    
+    {{ end }}
 
-{{ block "main" . }}
-<!-- all main content goes here -->
-{{ end }}
-
-{{ partial "footer" }}
+{{ partial "footer"}}

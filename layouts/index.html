@@ -1,4 +1,5 @@
-{{ define "main" }}
+{{ partial "head" . }}
+
 <div class="home__container">
 
     <h1 class="home__container--intro">{{ .Description }}</h1>
@@ -16,4 +17,7 @@
     </div>
 
 </div>
-{{ end }}
+
+
+
+{{ partial "footer" }}

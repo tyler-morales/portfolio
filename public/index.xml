@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Tyler Morales</title>
-    <link>http://tmo.codes/</link>
-    <description>Recent content in Home on Tyler Morales</description>
+    <title>Home on Hugo Sandbox</title>
+    <link>/</link>
+    <description>Recent content in Home on Hugo Sandbox</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Feb 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://tmo.codes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>International Space Station Tracker</title>
-      <link>http://tmo.codes/project_posts/project1/</link>
+      <link>/project_posts/project1/</link>
       <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://tmo.codes/project_posts/project1/</guid>
+      <guid>/project_posts/project1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Text Adventure Game</title>
-      <link>http://tmo.codes/project_posts/project2/</link>
+      <link>/project_posts/project2/</link>
       <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://tmo.codes/project_posts/project2/</guid>
+      <guid>/project_posts/project2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Coding music</title>
-      <link>http://tmo.codes/blog_posts/post3/</link>
+      <link>/blog_posts/post3/</link>
       <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://tmo.codes/blog_posts/post3/</guid>
+      <guid>/blog_posts/post3/</guid>
       <description>Some songs I like </description>
     </item>
     
     <item>
       <title>The Beginnings</title>
-      <link>http://tmo.codes/blog_posts/post1/</link>
+      <link>/blog_posts/post1/</link>
       <pubDate>Fri, 07 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://tmo.codes/blog_posts/post1/</guid>
+      <guid>/blog_posts/post1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Desk setup</title>
-      <link>http://tmo.codes/blog_posts/post2/</link>
+      <link>/blog_posts/post2/</link>
       <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://tmo.codes/blog_posts/post2/</guid>
+      <guid>/blog_posts/post2/</guid>
       <description>text adventure</description>
     </item>
     

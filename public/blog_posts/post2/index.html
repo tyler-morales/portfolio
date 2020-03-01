@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,600,900&display=swap" rel="stylesheet">
+    
+    
+    
+    <link rel="stylesheet" href="/scss/main.min.98d910f6b04a3b783eb54de5b765b14317eb180e49599e85f641fce1a98eb606.css">
+    
+    <title>Hugo Sandbox</title>
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
 <nav>
     <span class=home><a href="/">Tmo</a></span>
 
@@ -9,11 +28,11 @@
 
     <ul id=menu>
         
-        <li><a href="http://tmo.codes/project_posts/">Projects</a></li>
+        <li><a href="/project_posts/">Projects</a></li>
         
-        <li><a href="http://tmo.codes/about/">About</a></li>
+        <li><a href="/about/">About</a></li>
         
-        <li><a href="http://tmo.codes/blog_posts/">Blog</a></li>
+        <li><a href="/blog_posts/">Blog</a></li>
         
         
     </ul>
@@ -28,4 +47,55 @@ Desk setup
 
 
 
+    <footer>Made with ♡ by Tyler Morales</footer>
+
+    
+    <script>
+        const navButtons = [...document.querySelectorAll("button[aria-expanded]")];
+
+        function toggleNav() {
+            const expanded = this.getAttribute("aria-expanded") == "true" || false;
+            this.setAttribute("aria-expanded", !expanded);
+        }
+        navButtons.map(button => {
+            button.addEventListener("click", toggleNav);
+        });
+
+        
+        
+        var hamburger = document.querySelector(".hamburger");
+        
+        hamburger.addEventListener("click", function () {
+            
+            hamburger.classList.toggle("is-active");
+            
+        });
+    </script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
+    <script>
+        const instance = new Mark(document.querySelector("section.context"));
+        instance.mark(["interactive", "real-time", "modern design"], {
+            "element": "mark",
+            "className": "highlight"
+        });
+
+        const instance2 = new Mark(document.querySelector("section.about"));
+        instance2.mark(["purposeful design", "intuitive web experiences", "building interactive", "Chicago meetups", "document our progress", "learn the latest technologies", "globally","Web Development and Design", "Columbia College Chicago"], {
+            "element": "mark",
+            "className": "highlight",
+            "acrossElements": true,
+            "separateWordSearch": false,
+            "accuracy": {
+                "value": "exactly",
+                "limiters": [",", "."]
+            },
+        });
+    </script>
+
+
+    </body>
+
+    </html>
 

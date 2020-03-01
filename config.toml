@@ -1,6 +1,3 @@
-baseURL = "http://tmo.codes/"
+baseURL = ""
 languageCode = "en-us"
-title = "Tyler Morales"
-
-[taxonomies]
-  series = "series"
+title = "Hugo Sandbox"

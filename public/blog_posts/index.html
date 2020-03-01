@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<html>
-
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,18 +9,14 @@
     
     
     
-    <link rel="stylesheet" href="http://tmo.codes/scss/main.min.98d910f6b04a3b783eb54de5b765b14317eb180e49599e85f641fce1a98eb606.css">
-
+    <link rel="stylesheet" href="/scss/main.min.98d910f6b04a3b783eb54de5b765b14317eb180e49599e85f641fce1a98eb606.css">
     
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
-    <title>Tyler Morales</title>
+    <title>Hugo Sandbox</title>
 
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
-
-
 <nav>
     <span class=home><a href="/">Tmo</a></span>
 
@@ -35,11 +28,11 @@
 
     <ul id=menu>
         
-        <li><a href="http://tmo.codes/project_posts/">Projects</a></li>
+        <li><a href="/project_posts/">Projects</a></li>
         
-        <li><a href="http://tmo.codes/about/">About</a></li>
+        <li><a href="/about/">About</a></li>
         
-        <li><a href="http://tmo.codes/blog_posts/">Blog</a></li>
+        <li><a href="/blog_posts/">Blog</a></li>
         
         
     </ul>
@@ -48,15 +41,15 @@
 
 
 
-
-
-    
 <main class="blog__container">
     <div>
         <h1 class="blog__container--title">Blog</h1>
         <h4 class="blog__container--description">Tutorials, tips and tricks for developers</h4>
         
-        
+        <div class="box">
+    <div class="box--num">3</div>
+    <div class="box--description"># of posts</div>
+</div>
 
         <div class="posts">
             
@@ -66,7 +59,7 @@
                     <p class="posts__post__text--description">The best vibes for late night coding sessions while listening to lo-fi 🎧</p>
                     <h5 class="posts__post__text--date">Mon Feb 10 2020</h5>
                 </div>
-                <a class="posts__post--link" href="http://tmo.codes/blog_posts/post3/">Read more</a>
+                <a class="posts__post--link" href="/blog_posts/post3/">Read more</a>
             </div>
             
             <div class="posts__post">
@@ -75,7 +68,7 @@
                     <p class="posts__post__text--description">My journey into Web Development</p>
                     <h5 class="posts__post__text--date">Fri Feb 7 2020</h5>
                 </div>
-                <a class="posts__post--link" href="http://tmo.codes/blog_posts/post1/">Read more</a>
+                <a class="posts__post--link" href="/blog_posts/post1/">Read more</a>
             </div>
             
             <div class="posts__post">
@@ -84,14 +77,12 @@
                     <p class="posts__post__text--description">Check out how I set up my desk for coding</p>
                     <h5 class="posts__post__text--date">Wed Jan 22 2020</h5>
                 </div>
-                <a class="posts__post--link" href="http://tmo.codes/blog_posts/post2/">Read more</a>
+                <a class="posts__post--link" href="/blog_posts/post2/">Read more</a>
             </div>
             
         </div>
     </div>
 </main>
-
-
 
     <footer>Made with ♡ by Tyler Morales</footer>
 
@@ -128,10 +119,7 @@
         });
 
         const instance2 = new Mark(document.querySelector("section.about"));
-        instance2.mark(["purposeful design", "intuitive web experiences", "building interactive", "Chicago meetups",
-            "document our progress", "learn the latest technologies", "globally", "Web Development and Design",
-            "Columbia College Chicago"
-        ], {
+        instance2.mark(["purposeful design", "intuitive web experiences", "building interactive", "Chicago meetups", "document our progress", "learn the latest technologies", "globally","Web Development and Design", "Columbia College Chicago"], {
             "element": "mark",
             "className": "highlight",
             "acrossElements": true,
@@ -143,13 +131,6 @@
         });
     </script>
 
-    
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1200, 
-        });
-    </script>
 
     </body>
 

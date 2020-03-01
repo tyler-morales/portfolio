@@ -1,0 +1,20 @@
+{
+  "name": "portfolio_new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyler-morales/newPortfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tyler-morales/newPortfolio/issues"
+  },
+  "homepage": "https://github.com/tyler-morales/newPortfolio#readme"
+}

@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<html>
-
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,18 +9,14 @@
     
     
     
-    <link rel="stylesheet" href="http://tmo.codes/scss/main.min.98d910f6b04a3b783eb54de5b765b14317eb180e49599e85f641fce1a98eb606.css">
-
+    <link rel="stylesheet" href="/scss/main.min.98d910f6b04a3b783eb54de5b765b14317eb180e49599e85f641fce1a98eb606.css">
     
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
-    <title>Tyler Morales</title>
+    <title>Hugo Sandbox</title>
 
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
-
-
 <nav>
     <span class=home><a href="/">Tmo</a></span>
 
@@ -35,11 +28,11 @@
 
     <ul id=menu>
         
-        <li><a href="http://tmo.codes/project_posts/">Projects</a></li>
+        <li><a href="/project_posts/">Projects</a></li>
         
-        <li><a href="http://tmo.codes/about/">About</a></li>
+        <li><a href="/about/">About</a></li>
         
-        <li><a href="http://tmo.codes/blog_posts/">Blog</a></li>
+        <li><a href="/blog_posts/">Blog</a></li>
         
         
     </ul>
@@ -48,8 +41,7 @@
 
 
 
-
-
+    
 
 <main class="projects__container">
     <div>
@@ -63,7 +55,7 @@
                     <h2 class="projects__post__text--title">International Space Station Tracker</h2>
                     <p class="projects__post__text--description">Building NASA’s real-time tracker of the International Space Station (ISS)</p>
                 </div>
-                <a class="projects__post--link" href="http://tmo.codes/project_posts/project1/">View Project</a>
+                <a class="projects__post--link" href="/project_posts/project1/">View Project</a>
             </div>
             
             <div class="projects__post">
@@ -72,13 +64,17 @@
                     <h2 class="projects__post__text--title">Text Adventure Game</h2>
                     <p class="projects__post__text--description">A choose your own adventure JS game</p>
                 </div>
-                <a class="projects__post--link" href="http://tmo.codes/project_posts/project2/">View Project</a>
+                <a class="projects__post--link" href="/project_posts/project2/">View Project</a>
             </div>
             
         </div>
     </div>
-    
+    <div class="box">
+    <div class="box--num">2</div>
+    <div class="box--description"># of posts</div>
+</div>
 </main>
+
 
 
 
@@ -117,10 +113,7 @@
         });
 
         const instance2 = new Mark(document.querySelector("section.about"));
-        instance2.mark(["purposeful design", "intuitive web experiences", "building interactive", "Chicago meetups",
-            "document our progress", "learn the latest technologies", "globally", "Web Development and Design",
-            "Columbia College Chicago"
-        ], {
+        instance2.mark(["purposeful design", "intuitive web experiences", "building interactive", "Chicago meetups", "document our progress", "learn the latest technologies", "globally","Web Development and Design", "Columbia College Chicago"], {
             "element": "mark",
             "className": "highlight",
             "acrossElements": true,
@@ -132,13 +125,6 @@
         });
     </script>
 
-    
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1200, 
-        });
-    </script>
 
     </body>
 

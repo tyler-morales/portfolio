@@ -3,51 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://tmo.codes/project_posts/project1/</loc>
+    <loc>/project_posts/project1/</loc>
     <lastmod>2019-02-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://tmo.codes/project_posts/</loc>
+    <loc>/project_posts/</loc>
     <lastmod>2019-02-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://tmo.codes/project_posts/project2/</loc>
+    <loc>/project_posts/project2/</loc>
     <lastmod>2019-02-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://tmo.codes/about/</loc>
+    <loc>/about/</loc>
   </url>
   
   <url>
-    <loc>http://tmo.codes/blog_posts/</loc>
+    <loc>/blog_posts/</loc>
     <lastmod>2020-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://tmo.codes/blog_posts/post3/</loc>
+    <loc>/blog_posts/post3/</loc>
     <lastmod>2020-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://tmo.codes/</loc>
+    <loc>/</loc>
     <lastmod>2020-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://tmo.codes/blog_posts/post1/</loc>
+    <loc>/blog_posts/post1/</loc>
     <lastmod>2020-02-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://tmo.codes/blog_posts/post2/</loc>
+    <loc>/blog_posts/post2/</loc>
     <lastmod>2020-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://tmo.codes/series/</loc>
+    <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>
