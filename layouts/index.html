@@ -6,9 +6,9 @@
 
     <div class="home__container--socials">{{ partial "socials" . }}</div>
 
-    <div class="home__container__cards fade-in-slow">
+    <div class="home__container__cards">
         {{ range .Pages }}
-        <a href="{{ .Permalink }}" class="home__card">
+        <a href="{{ .Permalink }}" class="home__card layered-fade ">
             <h2 class="home__card--title">{{ .Title }}</h2>
             <hr class="home__card--line">
             <p class="home__card--description">{{ .Description }}</p>

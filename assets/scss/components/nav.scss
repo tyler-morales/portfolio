@@ -9,6 +9,7 @@ nav {
     border-bottom: 2px solid var(--color-secondary);
     margin: 20px 30px;
     padding: 20px 0;
+    z-index: 10;
 
     button {
         justify-self: end;

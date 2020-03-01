@@ -1,0 +1,14 @@
+.prevNext {
+    display: flex;
+    flex-direction: column;
+
+    &--top {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    &__controls {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,11 +1,11 @@
 ---
-weight: 2
-title: "Text Adventure Game"
+weight: 3
+title: "George Perez Judge"
 description: "A choose your own adventure JS game"
 typeOf: "Game"
 draft: false
-thumbnail: "/images/project_02/textAdventure_thumbnail.png"
-mockup: "/images/project_02/textAdventure_desktop.png"
+thumbnail: "/images/textAdventure_thumbnail.png"
+mockup: "/images/textAdventure_desktop.png"
 liveLink: "https://peaceful-knuth-debc9a.netlify.com/"
 brief:
     overview: "An Industry leader and innovator"
